@@ -2,7 +2,7 @@
 
 . "/etc/parallelcluster/cfnconfig"
 
-if [ "${cfn_node_type}" == "MasterServer" ]; then
+if [ "${cfn_node_type}" == "HeadNode" ]; then
    CUDA_INSTALL_PATH=/shared/cuda
    CRYOSPARC_INSTALL_PATH=/shared/cryosparc
    LICENSE_ID=$2
